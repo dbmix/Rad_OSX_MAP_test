@@ -7,12 +7,19 @@
 //
 
 #import "QTRAppDelegate.h"
+#import "QTRViewController.h"
 
 @implementation QTRAppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
+    self.QTRMapController = [[QTRViewController alloc] init];
+        //self.window.rootViewController = self.QTRMapController;
+        //[self.window makeKeyAndVisible];
+
+        //return YES;
+
 }
 
 @end

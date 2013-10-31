@@ -7,9 +7,11 @@
 //
 
 #import <Cocoa/Cocoa.h>
+@class QTRViewController;
 
 @interface QTRAppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
+@property (strong, nonatomic) QTRViewController *QTRMapController;
 
 @end
