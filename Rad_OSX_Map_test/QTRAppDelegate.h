@@ -8,10 +8,12 @@
 
 #import <Cocoa/Cocoa.h>
 @class QTRViewController;
+@class MKMapView;
 
 @interface QTRAppDelegate : NSObject <NSApplicationDelegate>
 
-@property (assign) IBOutlet NSWindow *window;
+@property (strong, nonatomic) NSWindow *window;
 @property (strong, nonatomic) QTRViewController *QTRMapController;
+@property (weak) IBOutlet MKMapView *mapView;
 
 @end

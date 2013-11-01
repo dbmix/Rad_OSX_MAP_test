@@ -8,13 +8,25 @@
 
 #import "QTRAppDelegate.h"
 #import "QTRViewController.h"
+#import <MapKit/MapKit.h>
 
 @implementation QTRAppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
-    self.QTRMapController = [[QTRViewController alloc] init];
+//    NSRect frame = NSMakeRect(0, 0, 200, 200);
+//    self.window  = [[NSWindow alloc] initWithContentRect:frame
+//                                                     styleMask:NSBorderlessWindowMask
+//                                                       backing:NSBackingStoreBuffered
+//                                                         defer:NO];
+//    [self.window setBackgroundColor:[NSColor blueColor]];
+//    [self.window makeKeyAndOrderFront:NSApp];
+
+    
+    self.QTRMapController = [[QTRViewController alloc] initWithNibName:nil bundle:nil];
+    [self.window.contentView addSubview:self.QTRMapController.view];
+
         //self.window.rootViewController = self.QTRMapController;
         //[self.window makeKeyAndVisible];
 

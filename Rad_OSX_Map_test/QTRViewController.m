@@ -13,6 +13,7 @@
 #import "Qatar.h"
 #import "QTRQatarMapOverlayView.h"
 #import "QTRQatarMapOverlay.h"
+#import "QTRStartingRegion.h"
 
 @interface QTRViewController () <MKMapViewDelegate>
 
@@ -36,22 +37,45 @@ bool graphicOverlay = NO;
     self = [super initWithNibName:nil bundle:nil];
     if (self) {
             // Initialization code here.
-        [self loadView];
-    }
+        self.QTRView = [[MKMapView alloc] initWithFrame:NSRectFromCGRect(CGRectMake(0.0, 0.0, 400, 400))];
+        self.view = self.QTRView;
+        MKCoordinateRegion region = [QTRStartingRegion startingRegion];
+        [self.QTRView setRegion:region animated:NO];
+        self.QTRView.delegate = self;
+
+        self.qatar = [[Qatar alloc] initWithRegion];
+            }
     return self;
 }
 
--(void)loadView {
-    [self viewDidLoad];
-    [self viewDidAppear:YES];
+-(id) init {
+
+        //self = [super init];
+    if (self) {
+    self.QTRView = [[MKMapView alloc] init];
+        MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(
+                                                                       CLLocationCoordinate2DMake(24.2, 45.1), 2500000, 2500000);
+        [self.QTRView setRegion:region animated:NO];
+        self.QTRView.delegate = self;
+
+        self.qatar = [[Qatar alloc] initWithRegion];
+    self.view = self.QTRView;
+    }
+    return self;
+
 }
 
-- (void)viewDidLoad
+-(void)loadView {
+    NSLog(@"loadview");
+}
+
+- (void)windowWillLoad
 {
+    NSLog(@"windowDidLoad");
         //[super viewDidLoad];
         // Do any additional setup after loading the view, typically from a nib.
-    self.QTRView = [[MKMapView alloc] init];
-    self.view = self.QTRView;
+//    self.QTRView = [[MKMapView alloc] init];
+//    self.view = self.QTRView;
         //CLLocationCoordinate2D startCenter;
         //MKCoordinateSpan startSpan;
         //startCenter.latitude = 40.697488;
@@ -66,8 +90,9 @@ bool graphicOverlay = NO;
 
 
 }
-
--(void)viewDidAppear:(BOOL)animated{
+-(void) windowDidLoad{
+    NSLog(@"windowDidLoad");
+        //-(void)viewDidAppear:(BOOL)animated{
         //[super viewDidAppear:animated];
         //CGRect scrn = [[NSScreen mainScreen] bounds];
 

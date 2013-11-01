@@ -7,18 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1602A9201824644800E3BFA0 /* QTRStartingRegion.m in Sources */ = {isa = PBXBuildFile; fileRef = 1602A91F1824644800E3BFA0 /* QTRStartingRegion.m */; };
+		162F0CA0182450A500CEE449 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 162F0C9F182450A500CEE449 /* MainMenu.xib */; };
 		169B45AF1821A5F600B61B59 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 169B45AE1821A5F600B61B59 /* Cocoa.framework */; };
 		169B45B91821A5F600B61B59 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 169B45B71821A5F600B61B59 /* InfoPlist.strings */; };
 		169B45BB1821A5F600B61B59 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 169B45BA1821A5F600B61B59 /* main.m */; };
 		169B45BF1821A5F600B61B59 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 169B45BD1821A5F600B61B59 /* Credits.rtf */; };
 		169B45C21821A5F600B61B59 /* QTRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 169B45C11821A5F600B61B59 /* QTRAppDelegate.m */; };
-		169B45C51821A5F600B61B59 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 169B45C31821A5F600B61B59 /* MainMenu.xib */; };
 		169B45C71821A5F600B61B59 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 169B45C61821A5F600B61B59 /* Images.xcassets */; };
 		169B45CE1821A5F600B61B59 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 169B45CD1821A5F600B61B59 /* XCTest.framework */; };
 		169B45CF1821A5F600B61B59 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 169B45AE1821A5F600B61B59 /* Cocoa.framework */; };
 		169B45D71821A5F600B61B59 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 169B45D51821A5F600B61B59 /* InfoPlist.strings */; };
 		169B45D91821A5F600B61B59 /* Rad_OSX_Map_testTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 169B45D81821A5F600B61B59 /* Rad_OSX_Map_testTests.m */; };
-		169B45E31821A64E00B61B59 /* QTRMap.xib in Resources */ = {isa = PBXBuildFile; fileRef = 169B45E21821A64E00B61B59 /* QTRMap.xib */; };
 		169B45E51821A75000B61B59 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 169B45E41821A75000B61B59 /* MapKit.framework */; };
 		169B45EA1821A7D500B61B59 /* QTRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 169B45E91821A7D500B61B59 /* QTRViewController.m */; };
 		16D624B41822BB6000F9C0F1 /* Qatar.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D624B31822BB6000F9C0F1 /* Qatar.m */; };
@@ -38,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1602A91E1824644800E3BFA0 /* QTRStartingRegion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTRStartingRegion.h; sourceTree = "<group>"; };
+		1602A91F1824644800E3BFA0 /* QTRStartingRegion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTRStartingRegion.m; sourceTree = "<group>"; };
+		162F0C9F182450A500CEE449 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		169B45AB1821A5F600B61B59 /* Rad_OSX_Map_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rad_OSX_Map_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		169B45AE1821A5F600B61B59 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		169B45B11821A5F600B61B59 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -50,14 +53,12 @@
 		169B45BE1821A5F600B61B59 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		169B45C01821A5F600B61B59 /* QTRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QTRAppDelegate.h; sourceTree = "<group>"; };
 		169B45C11821A5F600B61B59 /* QTRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QTRAppDelegate.m; sourceTree = "<group>"; };
-		169B45C41821A5F600B61B59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		169B45C61821A5F600B61B59 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		169B45CC1821A5F600B61B59 /* Rad_OSX_Map_testTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Rad_OSX_Map_testTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		169B45CD1821A5F600B61B59 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		169B45D41821A5F600B61B59 /* Rad_OSX_Map_testTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Rad_OSX_Map_testTests-Info.plist"; sourceTree = "<group>"; };
 		169B45D61821A5F600B61B59 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		169B45D81821A5F600B61B59 /* Rad_OSX_Map_testTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Rad_OSX_Map_testTests.m; sourceTree = "<group>"; };
-		169B45E21821A64E00B61B59 /* QTRMap.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QTRMap.xib; sourceTree = "<group>"; };
 		169B45E41821A75000B61B59 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		169B45E61821A75B00B61B59 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		169B45E81821A7D500B61B59 /* QTRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTRViewController.h; sourceTree = "<group>"; };
@@ -139,6 +140,8 @@
 		169B45B41821A5F600B61B59 /* Rad_OSX_Map_test */ = {
 			isa = PBXGroup;
 			children = (
+				1602A91E1824644800E3BFA0 /* QTRStartingRegion.h */,
+				1602A91F1824644800E3BFA0 /* QTRStartingRegion.m */,
 				16D624B51822BBB900F9C0F1 /* QTRQatarMapOverlayView.m */,
 				16D624B61822BBB900F9C0F1 /* QTRQatarMapOverlayView.h */,
 				16D624B71822BBB900F9C0F1 /* QTRQatarMapOverlay.m */,
@@ -149,8 +152,6 @@
 				169B45C11821A5F600B61B59 /* QTRAppDelegate.m */,
 				169B45E81821A7D500B61B59 /* QTRViewController.h */,
 				169B45E91821A7D500B61B59 /* QTRViewController.m */,
-				169B45E21821A64E00B61B59 /* QTRMap.xib */,
-				169B45C31821A5F600B61B59 /* MainMenu.xib */,
 				169B45C61821A5F600B61B59 /* Images.xcassets */,
 				169B45B51821A5F600B61B59 /* Supporting Files */,
 			);
@@ -160,6 +161,7 @@
 		169B45B51821A5F600B61B59 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				162F0C9F182450A500CEE449 /* MainMenu.xib */,
 				169B45B61821A5F600B61B59 /* Rad_OSX_Map_test-Info.plist */,
 				169B45B71821A5F600B61B59 /* InfoPlist.strings */,
 				169B45BA1821A5F600B61B59 /* main.m */,
@@ -235,6 +237,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = db;
 				TargetAttributes = {
+					169B45AA1821A5F600B61B59 = {
+						DevelopmentTeam = BY4ZA24U76;
+					};
 					169B45CB1821A5F600B61B59 = {
 						TestTargetID = 169B45AA1821A5F600B61B59;
 					};
@@ -267,8 +272,7 @@
 				169B45B91821A5F600B61B59 /* InfoPlist.strings in Resources */,
 				169B45C71821A5F600B61B59 /* Images.xcassets in Resources */,
 				169B45BF1821A5F600B61B59 /* Credits.rtf in Resources */,
-				169B45E31821A64E00B61B59 /* QTRMap.xib in Resources */,
-				169B45C51821A5F600B61B59 /* MainMenu.xib in Resources */,
+				162F0CA0182450A500CEE449 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +294,7 @@
 				16D624B91822BBB900F9C0F1 /* QTRQatarMapOverlayView.m in Sources */,
 				16D624BA1822BBB900F9C0F1 /* QTRQatarMapOverlay.m in Sources */,
 				169B45C21821A5F600B61B59 /* QTRAppDelegate.m in Sources */,
+				1602A9201824644800E3BFA0 /* QTRStartingRegion.m in Sources */,
 				169B45EA1821A7D500B61B59 /* QTRViewController.m in Sources */,
 				169B45BB1821A5F600B61B59 /* main.m in Sources */,
 				16D624B41822BB6000F9C0F1 /* Qatar.m in Sources */,
@@ -331,14 +336,6 @@
 			name = Credits.rtf;
 			sourceTree = "<group>";
 		};
-		169B45C31821A5F600B61B59 /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				169B45C41821A5F600B61B59 /* Base */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
 		169B45D51821A5F600B61B59 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -365,6 +362,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer: Evan Schechtman (9CX47B52KR)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -381,8 +379,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "AD0CDA64-FFEA-4FD7-8886-4491DF923C1E";
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -402,6 +401,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer: Evan Schechtman (9CX47B52KR)";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -413,7 +413,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PROVISIONING_PROFILE = "AD0CDA64-FFEA-4FD7-8886-4491DF923C1E";
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -422,11 +423,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer: Evan Schechtman (9CX47B52KR)";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Rad_OSX_Map_test/Rad_OSX_Map_test-Prefix.pch";
 				INFOPLIST_FILE = "Rad_OSX_Map_test/Rad_OSX_Map_test-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "AD0CDA64-FFEA-4FD7-8886-4491DF923C1E";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -435,11 +438,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer: Evan Schechtman (9CX47B52KR)";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Rad_OSX_Map_test/Rad_OSX_Map_test-Prefix.pch";
 				INFOPLIST_FILE = "Rad_OSX_Map_test/Rad_OSX_Map_test-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "AD0CDA64-FFEA-4FD7-8886-4491DF923C1E";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -461,6 +466,7 @@
 				);
 				INFOPLIST_FILE = "Rad_OSX_Map_testTests/Rad_OSX_Map_testTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "50885F43-B9FE-4AA7-B571-47F24BC8DD17";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -479,6 +485,7 @@
 				GCC_PREFIX_HEADER = "Rad_OSX_Map_test/Rad_OSX_Map_test-Prefix.pch";
 				INFOPLIST_FILE = "Rad_OSX_Map_testTests/Rad_OSX_Map_testTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "50885F43-B9FE-4AA7-B571-47F24BC8DD17";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};

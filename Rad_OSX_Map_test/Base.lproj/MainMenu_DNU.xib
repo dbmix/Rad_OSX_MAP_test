@@ -3,7 +3,6 @@
     <dependencies>
         <deployment defaultVersion="1080" identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="4514"/>
-        <plugIn identifier="com.apple.MapKitIBPlugin" version="3336"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -656,12 +655,6 @@
             <view key="contentView" id="372">
                 <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
                 <autoresizingMask key="autoresizingMask"/>
-                <subviews>
-                    <mapView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4pL-oi-Jgt">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    </mapView>
-                </subviews>
             </view>
         </window>
         <customObject id="494" customClass="QTRAppDelegate">
