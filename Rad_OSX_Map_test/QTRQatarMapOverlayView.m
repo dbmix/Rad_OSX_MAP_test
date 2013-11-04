@@ -27,10 +27,12 @@
 }
 
 - (void)drawMapRect:(MKMapRect)mapRect zoomScale:(MKZoomScale)zoomScale inContext:(CGContextRef)context {
-    CGImageRef imageReference = (__bridge CGImageRef)(self.overlayImage);
+        //CGImageRef imageReference = (__bridge CGImageRef)(self.overlayImage);
+
 
     MKMapRect theMapRect = self.overlay.boundingMapRect;
-    CGRect theRect = [self rectForMapRect:theMapRect];
+    NSRect theRect = NSRectFromCGRect([self rectForMapRect:theMapRect]);
+    CGImageRef imageReference = [self.overlayImage CGImageForProposedRect:&theRect context:(__bridge NSGraphicsContext *)(context) hints:nil];
 
     CGContextScaleCTM(context, 1.0, -1.0);
     CGContextTranslateCTM(context, 0.0, -theRect.size.height);

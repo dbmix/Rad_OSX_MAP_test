@@ -32,39 +32,33 @@
 bool polyOverlay = NO;
 bool graphicOverlay = NO;
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil windowFrame:(NSRect)windowFrame
 {
     self = [super initWithNibName:nil bundle:nil];
     if (self) {
             // Initialization code here.
-        self.QTRView = [[MKMapView alloc] initWithFrame:NSRectFromCGRect(CGRectMake(0.0, 0.0, 400, 400))];
+            //self.QTRView = [[MKMapView alloc] initWithFrame:NSRectFromCGRect(CGRectMake(0.0, 0.0, 400, 400))];
+        self.QTRView = [[MKMapView alloc] initWithFrame:windowFrame];
+
         self.view = self.QTRView;
         MKCoordinateRegion region = [QTRStartingRegion startingRegion];
         [self.QTRView setRegion:region animated:NO];
         self.QTRView.delegate = self;
 
         self.qatar = [[Qatar alloc] initWithRegion];
+        self.QTRButton = [[NSButton alloc] initWithFrame:CGRectMake(30, 50 , 120, 40)];
+        self.QTRFlag = [[NSButton alloc] initWithFrame:CGRectMake(180, 50 , 120, 40)];
+        [self.QTRButton setTitle:@"Qatar"];
+        [self.QTRButton setAction:@selector(zoomToQatarWithAnnotations)];
+        [self.view addSubview:self.QTRButton];
+        [self.QTRFlag setTitle:@"Flag"];
+        [self.QTRFlag setAction:@selector(addFlagOverlay)];
+        [self.view addSubview:self.QTRFlag];
             }
     return self;
 }
 
--(id) init {
-
-        //self = [super init];
-    if (self) {
-    self.QTRView = [[MKMapView alloc] init];
-        MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(
-                                                                       CLLocationCoordinate2DMake(24.2, 45.1), 2500000, 2500000);
-        [self.QTRView setRegion:region animated:NO];
-        self.QTRView.delegate = self;
-
-        self.qatar = [[Qatar alloc] initWithRegion];
-    self.view = self.QTRView;
-    }
-    return self;
-
-}
-
+/*
 -(void)loadView {
     NSLog(@"loadview");
 }
@@ -126,7 +120,7 @@ bool graphicOverlay = NO;
     [self.view addSubview:self.QTRFlag];
 
 
-}
+} */
 
 -(void) zoomToQatarWithAnnotations {
 

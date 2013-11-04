@@ -23,13 +23,16 @@
 //    [self.window setBackgroundColor:[NSColor blueColor]];
 //    [self.window makeKeyAndOrderFront:NSApp];
 
-    
-    self.QTRMapController = [[QTRViewController alloc] initWithNibName:nil bundle:nil];
+    [self.window setFrame:NSRectFromCGRect(CGRectMake(300, 300, 1000, 1000)) display:YES];
+    NSRect windoh = self.window.frame;
+    self.QTRMapController = [[QTRViewController alloc] initWithNibName:nil bundle:nil windowFrame:windoh];
+    windoh.origin.x = windoh.origin.y = 0;
+    self.QTRMapController.view.frame = windoh;
     [self.window.contentView addSubview:self.QTRMapController.view];
+    self.window.delegate = self.QTRMapController;
 
         //self.window.rootViewController = self.QTRMapController;
         //[self.window makeKeyAndVisible];
-
         //return YES;
 
 }

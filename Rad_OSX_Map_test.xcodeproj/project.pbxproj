@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1602A9201824644800E3BFA0 /* QTRStartingRegion.m in Sources */ = {isa = PBXBuildFile; fileRef = 1602A91F1824644800E3BFA0 /* QTRStartingRegion.m */; };
+		160F56C41827F5F000B31F1D /* QFlag.png in Resources */ = {isa = PBXBuildFile; fileRef = 160F56C31827F5F000B31F1D /* QFlag.png */; };
 		162F0CA0182450A500CEE449 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 162F0C9F182450A500CEE449 /* MainMenu.xib */; };
 		169B45AF1821A5F600B61B59 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 169B45AE1821A5F600B61B59 /* Cocoa.framework */; };
 		169B45B91821A5F600B61B59 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 169B45B71821A5F600B61B59 /* InfoPlist.strings */; };
@@ -40,6 +41,7 @@
 /* Begin PBXFileReference section */
 		1602A91E1824644800E3BFA0 /* QTRStartingRegion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTRStartingRegion.h; sourceTree = "<group>"; };
 		1602A91F1824644800E3BFA0 /* QTRStartingRegion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTRStartingRegion.m; sourceTree = "<group>"; };
+		160F56C31827F5F000B31F1D /* QFlag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QFlag.png; sourceTree = "<group>"; };
 		162F0C9F182450A500CEE449 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		169B45AB1821A5F600B61B59 /* Rad_OSX_Map_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rad_OSX_Map_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		169B45AE1821A5F600B61B59 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -98,6 +100,7 @@
 		169B45A21821A5F600B61B59 = {
 			isa = PBXGroup;
 			children = (
+				160F56C31827F5F000B31F1D /* QFlag.png */,
 				169B45B41821A5F600B61B59 /* Rad_OSX_Map_test */,
 				169B45D21821A5F600B61B59 /* Rad_OSX_Map_testTests */,
 				169B45AD1821A5F600B61B59 /* Frameworks */,
@@ -272,6 +275,7 @@
 				169B45B91821A5F600B61B59 /* InfoPlist.strings in Resources */,
 				169B45C71821A5F600B61B59 /* Images.xcassets in Resources */,
 				169B45BF1821A5F600B61B59 /* Credits.rtf in Resources */,
+				160F56C41827F5F000B31F1D /* QFlag.png in Resources */,
 				162F0CA0182450A500CEE449 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
